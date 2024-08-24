@@ -1,0 +1,532 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0E1C2D;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Container and Items */
+.containerParent {
+    background-color: #08173F;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 0px 5px 0px rgb(5, 12, 82);
+    height: 100px;
+    width: 20px;
+    position: relative;
+    left: 200px;
+    top: 270px;
+}
+.btn-div{
+    height: 100px;
+    width: 15px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+
+.itemParent {
+    border-width: 0px 1px 0px 0px;
+    background-color: #08173f;
+    box-shadow: 0px 0px 5px 0px rgb(2, 2, 74);
+    height: 670px;
+    width: 200px;
+    position: absolute;
+    left: -200px;
+    top: -270px;
+}
+
+.item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13 {
+    height: 40px;
+    width: 160px;
+    border: 1px solid rgb(106, 112, 193);
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    margin: 9px;
+    padding: 10px 0px 15px 35px;
+    color: white;
+    transition: background-color 1s ease, color 0.3s ease;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens larger than 768px (e.g., tablets in landscape mode, desktops) */
+@media (min-width: 768px) {
+    .containerParent {
+        height: 120px;
+        width: 30px;
+        left: 220px;
+        top: 250px;
+    }
+
+    .itemParent {
+        height: 700px;
+        width: 220px;
+        left: -220px;
+        top: -250px;
+    }
+
+    .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13 {
+        height: 45px;
+        width: 180px;
+        padding: 12px 0px 17px 40px;
+    }
+}
+
+/* For screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 767px) {
+    .containerParent {
+        height: 80px;
+        width: 15px;
+        left: 150px;
+        top: 200px;
+    }
+
+    .itemParent {
+        height: 500px;
+        width: 150px;
+        left: -150px;
+        top: -200px;
+    }
+
+    .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13 {
+        height: 35px;
+        width: 120px;
+        padding: 8px 0px 12px 30px;
+    }
+}
+
+/* For screens smaller than 480px (e.g., small mobile phones) */
+@media (max-width: 479px) {
+    .containerParent {
+        height: 60px;
+        width: 10px;
+        left: 100px;
+        top: 150px;
+    }
+
+    .itemParent {
+        height: 400px;
+        width: 100px;
+        left: -100px;
+        top: -150px;
+    }
+
+    .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13 {
+        height: 30px;
+        width: 90px;
+        padding: 6px 0px 10px 20px;
+    }
+}
+
+.item14,.item15,.item16,.item17,.item18{
+    display: none;
+    height: 40px;
+    width: 160px;
+    position: absolute;
+    left: -200px;
+    top:-270px;
+    padding: 10px 0px 15px 35px;
+    color: white;
+}
+.item1{
+    height: 70px;
+    width:200px;
+    position: relative;
+    top: 10px;
+    padding: 10px 0px 0px 40px;
+}
+.remaining{
+    color: white;
+    
+}
+.item2:hover, .item3:hover, .item4:hover, .item5:hover, .item2:hover, .item6:hover,
+.item7:hover, .item8:hover, .item9:hover, .item10:hover, .item11:hover, .item12:hover, 
+.item13:hover, .item14:hover{
+    background-color: #6161d6;
+    color: rgb(40, 40, 40);
+}
+.blur{
+    background-color: #0d0d54ef;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.week{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 15px;
+    left: 545px;
+}
+.container{
+    height: 570px;
+    width: 1240px;
+    background-color: #182D61;
+    border-radius: 5px;
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box1, .box2, .box3{
+    height: 40px;
+    width: 200px;
+    background-color: #438EAE;
+    border-radius: 45px;
+    margin: 5px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box1{
+    position: absolute;
+    left: 25px;
+}
+.box2{
+    position: absolute;
+    left: 520px;
+}
+.box3{
+    position: absolute;
+    left: 1000px;
+}
+
+.blur{
+    height: 690px;
+    width: 1500px;
+    background-color: #182d6139;
+    position: absolute;
+    left: -200px;
+    top: -270px;
+}
+.containerTime{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box4, .box5, .box6{
+    height: 40px;
+    width: 200px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.containerSub{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box7, .box8, .box9{
+    height: 40px;
+    width: 720px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.containerAtt{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box10, .box11, .box12
+{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box11{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box12{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box30, .box31, .box32{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box30{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 100px;
+    left: 1070px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box31{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 150px;
+    left: 1070px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box32{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 200px;
+    left: 1070px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box28, .box29,.box33{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 100px;
+    left: 1140px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box29{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 150px;
+    left: 1140px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box33{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: absolute;
+    top: 200px;
+    left: 1140px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+
+.container2{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box13, .box14, .box15, .box24{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 350px;
+    left: 1040px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box34,
+.box35, .box36, .box37{
+    height: 40px;
+    width: 40px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 150px;
+    left: 1100px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.container3{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box16, .box17, .box18, .box23{
+    height: 40px;
+    width: 720px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 350px;
+    left: 250px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.container4{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box19, .box20, .box21, .box22{
+    height: 40px;
+    width: 200px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 350px;
+    left: 25px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.container5{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: row;
+}
+.box25, .box26, .box27{
+    height: 40px;
+    width: 200px;
+    background-color: #438EAE;
+    border-radius: 45px;
+    margin: 5px;
+    position: relative;
+    top: 270px;
+    left: 25px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box25{
+    position: absolute;
+    left: 25px;
+}
+.box26{
+    position: absolute;
+    left: 520px;
+}
+.box27{
+    position: absolute;
+    left: 1000px;
+}
+
+.box10, .box11, .box12, .box7, .box8, .box9
+, .box4, .box5, .box6, .box19, .box20, .box21
+, .box16, .box17, .box18, .box13, .box14, .box15
+, .box10, .box11, .box12{
+    box-shadow: 0px 0px 5px 0px rgb(2, 11, 75);
+}
+
